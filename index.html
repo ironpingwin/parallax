@@ -7,21 +7,21 @@
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<script type="text/javascript" src="scripts/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript" src="scripts/jquery.stellar.min.js"></script>
-	<script type="text/javascript">
-		$(function(){
-			$.stellar({
-				horizontalScrolling: false,
-				verticalOffset: 40
-			});
-		});
-	</script>
+	<script type="text/javascript" src="scripts/jquery.scrollto.js"></script>
+	<script type="text/javascript" src="scripts/scripts.js"></script>
+
 </head>
 
 <body>
+	<div id="menu">
+		<a id="aFirst" href="#first" >First panel</a>
+		<a id="aSecond" href="#second" >Second panel</a>
+		<a id="aThird" href="#third" >Third panel</a>
+	</div>
 	
-	<div class="photo first" data-stellar-background-ratio="0.5"><span>Pierwszy tekst</span></div>
-	<div class="photo second" data-stellar-background-ratio="0.5"><span>Drugi tekst</span></div>
-	<div class="photo third" data-stellar-background-ratio="0.5"><span>Trzeci tekst</span></div>
-
+	<div id="first" class="photo first" data-stellar-background-ratio="0.5"><span>Pierwszy tekst</span></div>
+	<div id="second" class="photo second" data-stellar-background-ratio="0.5"><span>Drugi tekst</span></div>
+	<div id="third" class="photo third" data-stellar-background-ratio="0.5"><span>Trzeci tekst</span></div>
+	<div class="shoe" data-stellar-background-ratio="0.5"></div>
 </body>
 </html>
