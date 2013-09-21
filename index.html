@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Parallax web site test</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="scripts/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.stellar.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$.stellar({
+				horizontalScrolling: false,
+				verticalOffset: 40
+			});
+		});
+	</script>
+</head>
+
+<body>
+	
+	<div class="photo first" data-stellar-background-ratio="0.5"><span>Pierwszy tekst</span></div>
+	<div class="photo second" data-stellar-background-ratio="0.5"><span>Drugi tekst</span></div>
+	<div class="photo third" data-stellar-background-ratio="0.5"><span>Trzeci tekst</span></div>
+
+</body>
+</html>

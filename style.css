@@ -1,0 +1,19 @@
+.photo {
+	background-attachment: fixed;
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	height: 450px;
+	position: relative;
+}
+
+.first {
+	background-image: url(pict/background_1.png);
+}
+
+.second {
+	background-image: url(pict/background_2.png);
+}
+
+.third {
+	background-image: url(pict/background_3.png);
+}
