@@ -27,8 +27,8 @@ $( document ).ready(function() {
 	$('#centralSquare').css('left', left + 'px');
 	
 	$('#laptopSlider').slidesjs({
-		width: 880,
-		height: 550
+		width: 744,
+		height: 468
 	});
 	
 	$('#laptopSliderLeft').click(function() {
@@ -42,3 +42,11 @@ $( document ).ready(function() {
     });
 
 });
+
+// click on apriopriate page in slider given as div
+function pageClick(div, number, clicked) {
+	$('#' + div + ' .slidesjs-pagination a')[number].click();
+	$(clicked).siblings().attr( "class", "paginationRect unselectedRectDark");
+	$(clicked).attr( "class", "paginationRect selectedRect");
+}
+

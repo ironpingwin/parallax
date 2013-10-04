@@ -54,16 +54,6 @@ h2 {
 	color: black;
 }
 
-#laptop {
-	background-image: url(pict/laptop.png);
-	background-repeat: no-repeat;
-	width: 1160px;
-	height: 700px;
-}
-
-#laptopText {
-	width: 900px;
-}
 
 .first {
 	background-image: url(pict/background_1.png);
@@ -105,7 +95,7 @@ h2 {
 	line-height: 40px;
 	text-align:center;
 	z-index:1000;
-	background-color:rgba(0,0,0,0.7);
+	background-color:rgba(0,0,0,0.9);
 }
 
 #menu a {
@@ -126,15 +116,26 @@ h2 {
 	margin-right: 30px;
 }
 
+#laptop {
+	background-image: url(pict/laptop.png);
+	background-repeat: no-repeat;
+	width: 980px;
+	height: 586px;
+}
+
+#laptopText {
+	width: 900px;
+}
+
 #laptopSliderContainer {
 	position: absolute;
-	top: 990px;
+	top: 982px;
 	width:100%;
 }
 
 #laptopSlider {
 	position: relative;
-	width: 880px;
+	width: 744px;
 	margin: 0px auto;
 }
 
@@ -166,3 +167,27 @@ h2 {
 	display:none;
 }
 
+.slidesjs-pagination {
+	display:none;
+}
+
+.selectedRect {
+	fill: #C41B60;
+}
+
+.unselectedRectBright {
+	fill: white;
+}
+
+.unselectedRectDark {
+	fill: black;
+}
+
+.pagination {
+	text-align: right;
+}
+
+.paginationRect {
+	margin-left: 12px;
+	cursor: pointer;
+}
