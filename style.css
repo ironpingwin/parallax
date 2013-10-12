@@ -193,7 +193,13 @@ h2 {
 }
 
 
-
+.grayscale {
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
 
 .rectTurnLeft {
 	overflow: hidden;
@@ -236,30 +242,32 @@ h2 {
 }
 
 #tiles {
-	position: relative;
-	top: -180px;
+	position: absolute;
+	top: 90px;
 	width: 900px;
 	height: 900px;
+	left: 0px;
+	right: 0px;
 }
 
 .row1 {
-	top : 109px;
+	top : 110px;
 }
 
 .row2 {
-	top: 229px;
+	top: 230px;
 }
 
 .row3 {
-	top: 349px;
+	top: 350px;
 }
 
 .row4 {
-	top: 469px;
+	top: 470px;
 }
 
 .row5 {
-	top: 589px;
+	top: 590px;
 }
 
 .col1 {

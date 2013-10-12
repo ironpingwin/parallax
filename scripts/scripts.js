@@ -175,8 +175,6 @@ function zoomOutRect(rect) {
 	rect.width = 230;
 	rect.height = 230;
 	
-	
-	console.log(rectTurnLeftWidth);
 	$(rect).parent().parent().parent().css("width", rectTurnLeftWidth);
 	$(rect).parent().parent().parent().css("height", rectTurnLeftHeight);
 	
