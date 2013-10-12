@@ -208,7 +208,7 @@ h2 {
 	-ms-transform:rotate(0deg);
 	transform:rotate(-45deg);
 /* 	transition: width 300ms, height: 300ms; */
-	-moz-transition:width 300ms, height 300ms, left 600ms, top 600ms;
+/* 	-moz-transition:width 300ms, height 300ms, left 600ms, top 600ms; */
 }
 
 .rectTurnRight {
@@ -233,7 +233,6 @@ h2 {
 .rectPict {
 	margin-top: 10px;
 	margin-left: -5px;
-	-moz-transition:margin 600ms;
 }
 
 #tiles {
@@ -244,19 +243,27 @@ h2 {
 }
 
 .row1 {
-	top : 100px;
+	top : 109px;
 }
 
 .row2 {
-	top: 220px;
+	top: 229px;
 }
 
 .row3 {
-	top: 340px;
+	top: 349px;
+}
+
+.row4 {
+	top: 469px;
+}
+
+.row5 {
+	top: 589px;
 }
 
 .col1 {
-	left: 233px;
+	left: 193px;
 }
 
 .col2 {
@@ -269,4 +276,8 @@ h2 {
 
 .col4 {
 	left: 553px;
+}
+
+.col5 {
+	left: 673px;
 }
