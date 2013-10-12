@@ -191,3 +191,82 @@ h2 {
 	margin-left: 12px;
 	cursor: pointer;
 }
+
+
+
+
+.rectTurnLeft {
+	overflow: hidden;
+	position:absolute;
+	width:158px;
+	height:158px;
+	top:45px;
+	left:45px;	
+	-moz-transform:rotate(-45deg);
+	-o-transform:rotate(-45deg);
+	-webkit-transform:rotate(-45deg);
+	-ms-transform:rotate(0deg);
+	transform:rotate(-45deg);
+/* 	transition: width 300ms, height: 300ms; */
+	-moz-transition:width 300ms, height 300ms, left 600ms, top 600ms;
+}
+
+.rectTurnRight {
+	width:250px;
+	height:250px;
+	position:absolute;
+	left: -35px;
+	top: -35px;
+	-moz-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	-ms-transform:rotate(45deg);
+	transform:rotate(45deg);		
+}
+
+.rectInner {
+	width: 250px;
+	height: 250px;
+	position: absolute;
+}
+
+.rectPict {
+	margin-top: 10px;
+	margin-left: -5px;
+	-moz-transition:margin 600ms;
+}
+
+#tiles {
+	position: relative;
+	top: -180px;
+	width: 900px;
+	height: 900px;
+}
+
+.row1 {
+	top : 100px;
+}
+
+.row2 {
+	top: 220px;
+}
+
+.row3 {
+	top: 340px;
+}
+
+.col1 {
+	left: 233px;
+}
+
+.col2 {
+	left: 313px;
+}
+
+.col3 {
+	left: 433px;
+}
+
+.col4 {
+	left: 553px;
+}

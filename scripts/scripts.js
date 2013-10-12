@@ -17,6 +17,10 @@ function scrollToClick(e) {
 	e.preventDefault();	
 }
 
+var rectTurnLeftWidth;
+var rectTurnLeftHeight;
+var rectPictMarginTop;
+
 $( document ).ready(function() {
 	$('#aFirst').click(scrollToClick);
 	$('#aSecond').click(scrollToClick);
@@ -32,6 +36,10 @@ $( document ).ready(function() {
 	});
 	
 
+	// remember initial class values
+	rectTurnLeftWidth = $('.rectTurnLeft').css("width"); 
+	rectTurnLeftHeight = $('.rectTurnLeft').css("height");
+	rectPictMarginTop = $('.rectPict').css("margin-top");
 });
 
 
@@ -135,4 +143,48 @@ var laptopPictPerPage = {
 
 var laptopSlider = new Slider('laptop', laptopPictPerPage);
 
+
+
+
+var rectTurnLeftLeft;
+var rectTurnLeftTop;
+
+function zoomInRect(rect) {
+	rect.width = 380;
+	rect.height = 380;
+	
+	$(rect).parent().parent().parent().css("width", "260px");
+	$(rect).parent().parent().parent().css("height", "260px");
+
+	rectTurnLeftLeft = $(rect).parent().parent().parent().css("left");
+	rectTurnLeftTop = $(rect).parent().parent().parent().css("top");
+	$(rect).parent().parent().parent().css("left", parseInt(rectTurnLeftLeft) - 50 + "px");
+	$(rect).parent().parent().parent().css("top", parseInt(rectTurnLeftTop) - 50 + "px");
+	
+	$(rect).css("margin-top", "-70px");
+	$(rect).parent().parent().parent().css("z-index", "10");
+	
+/*	$(rect).parent().parent().css("width", "400px");
+	$(rect).parent().parent().css("height", "400px");	
+	
+	$(rect).parent().css("width", "400px");
+	$(rect).parent().css("height", "400px");	*/	
+}
+
+function zoomOutRect(rect) {
+	rect.width = 230;
+	rect.height = 230;
+	
+	
+	console.log(rectTurnLeftWidth);
+	$(rect).parent().parent().parent().css("width", rectTurnLeftWidth);
+	$(rect).parent().parent().parent().css("height", rectTurnLeftHeight);
+	
+	$(rect).parent().parent().parent().css("left", rectTurnLeftLeft);
+	$(rect).parent().parent().parent().css("top", rectTurnLeftTop);
+	
+	$(rect).css("margin-top", rectPictMarginTop);
+	$(rect).parent().parent().parent().css("z-index", "1");
+	
+}
 
