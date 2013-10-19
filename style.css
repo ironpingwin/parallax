@@ -30,6 +30,10 @@ h2 {
 	position: relative;
 }
 
+.hidden {
+	display: none;
+}
+
 #firstText {
 	position: relative;
 	top: 80px;
@@ -194,11 +198,11 @@ h2 {
 
 
 .grayscale {
-	-webkit-filter: grayscale(100%);
+/*	-webkit-filter: grayscale(100%);
 	-moz-filter: grayscale(100%);
 	-o-filter: grayscale(100%);
 	-ms-filter: grayscale(100%);
-	filter: grayscale(100%);
+	filter: grayscale(100%);*/
 }
 
 .rectTurnLeft {
@@ -238,6 +242,15 @@ h2 {
 
 .rectPict {
 	margin-top: 10px;
+	margin-left: -5px;
+}
+
+.rectHalf {
+	position: absolute;
+	width: 150%;
+	height: 100%;
+	top: 50%;
+	background-color: rgba(0,0,0,0.6);
 	margin-left: -5px;
 }
 
@@ -289,3 +302,4 @@ h2 {
 .col5 {
 	left: 673px;
 }
+
