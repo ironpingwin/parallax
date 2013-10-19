@@ -27,9 +27,10 @@ var imgGray;
 var imgColor;
 
 $( document ).ready(function() {
-	$('#aFirst').click(scrollToClick);
-	$('#aSecond').click(scrollToClick);
-	$('#aThird').click(scrollToClick);
+	// add slow scroll on link click
+	$('#menu').delegate('a', 'click', scrollToClick);
+	$('#tiles').delegate('a', 'click', scrollToClick);
+
 	
 	var center = $(document).width() / 2;
 	var left = ($(document).width() - $('#centralSquare').width()) / 2 + CENTRAL_SQUARE_SHIFT;

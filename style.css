@@ -252,6 +252,11 @@ h2 {
 	top: 50%;
 	background-color: rgba(0,0,0,0.6);
 	margin-left: -5px;
+	color: white;
+	text-align: center;
+	font-size: x-large;
+	padding-top: 10%;
+	text-decoration: none;
 }
 
 #tiles {
