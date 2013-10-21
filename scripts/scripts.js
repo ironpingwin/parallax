@@ -166,9 +166,12 @@ Slider.prototype.pageClick = function(clicked) {
 /* Number of pictures per single page */
 var laptopPictPerPage = {
 	0: 2,
-	1: 3,
+	1: 2,
 	2: 2,
-	3: 1,
+	3: 2,
+	4: 4,
+	5: 3,
+	6: 4
 };
 
 var laptopSlider = new Slider('laptop', laptopPictPerPage);
