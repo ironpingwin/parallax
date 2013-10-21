@@ -139,7 +139,8 @@ h2 {
 
 #laptopSlider {
 	position: relative;
-	width: 744px;
+	width: 100%;
+	max-width: 744px;
 	margin: 0px auto;
 }
 
@@ -149,17 +150,30 @@ h2 {
 
 .sliderLeft {
 	position: absolute;
+	z-index:105;
+	margin-left: 0px;
+}
+
+.sliderLeft:hover {
+	margin-left: -2px;
 }
 
 .sliderRight {
 	position: absolute;
-	right: 0px;	
+	right: 0px;
+	z-index:105;
+	margin-right:0px;
+}
+
+.sliderRight:hover {
+	margin-right:-2px;
 }
 
 .sliderInnerContainer {
 	position: relative;
 	z-index:100;
-	width: 1180px;
+	width:100%;
+	max-width: 1180px;
 	margin: 0px auto;
 }
 
