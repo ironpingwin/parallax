@@ -134,26 +134,37 @@ Slider.prototype.highlightPage = function(page) {
 	$(page).attr( "class", "paginationRect selectedRect");
 }
 
+Slider.prototype.showText = function(page) {
+	$('#' + this.id_ + 'Text .descriptions div').each(function(index) {
+		if (index == page)
+			$( this ).show();
+		else
+			$(this).hide();
+	});	
+}
+
 Slider.prototype.pageClickByNo = function() {
 	var pageNo = this.findPage(this.activePicture_);
 	var child = $('#' + this.id_ + "Text .pagination").children()[pageNo];
-	this.highlightPage(child);	
+	this.highlightPage(child);
+	this.showText(pageNo);
 }
 
 // click on apriopriate page in slider given as div
 Slider.prototype.pageClick = function(clicked) {
-	var childNo = 0;
+	var pageNo = 0;
 	for (c in $(clicked).parent().children()) {		// find number of clicked page
 		if ($(clicked).parent().children()[c] == clicked) {
 			break;
 		}
-		++childNo;
+		++pageNo;
 	}
 	
-	var pictNo = this.findPict(childNo);
+	var pictNo = this.findPict(pageNo);
 	this.activePicture_ = pictNo;
 	$('#' + this.id_ + 'Slider' + ' .slidesjs-pagination a')[pictNo].click();
 	this.highlightPage(clicked);
+	this.showText(pageNo);
 }
 
 
