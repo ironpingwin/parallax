@@ -22,6 +22,10 @@ h2 {
 	z-index:1;
 }
 
+.white {
+	color: white;
+}
+
 .photo {
 /* 	background-attachment: fixed; */
 	background-position: 50% 0;
@@ -120,6 +124,11 @@ h2 {
 	margin-right: 30px;
 }
 
+.panel {
+	padding-top:40px;
+	padding-bottom:40px;
+}
+
 #laptop {
 	background-image: url(pict/laptop.png);
 	background-repeat: no-repeat;
@@ -133,7 +142,7 @@ h2 {
 
 #laptopSliderContainer {
 	position: absolute;
-	top: 982px;
+	top: 1022px;
 	width:100%;
 }
 
@@ -144,7 +153,7 @@ h2 {
 	margin: 0px auto;
 }
 
-.laptopSlider {
+.sliderArrows {
 	top: 200px;
 }
 
@@ -210,9 +219,26 @@ h2 {
 	cursor: pointer;
 }
 
+.slider {
+	position: relative;
+	width: 100%;
+	max-width: 900px;
+	margin: 0px auto;
+}
+
+.sliderContainer {
+	width:100%;
+}
+
+.sliderText {
+	width: 100%;
+	max-width: 900px;
+}
+
 #third {
     background-color: black;
 }
+
 
 
 .grayscale {
