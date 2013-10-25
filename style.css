@@ -133,7 +133,7 @@ h2 {
 
 #laptopSliderContainer {
 	position: absolute;
-	top: 982px;
+	top: 1022px;
 	width:100%;
 }
 
@@ -144,7 +144,7 @@ h2 {
 	margin: 0px auto;
 }
 
-.laptopSlider {
+.sliderArrows {
 	top: 200px;
 }
 
@@ -210,10 +210,24 @@ h2 {
 	cursor: pointer;
 }
 
+.slider {
+	position: relative;
+	width: 100%;
+	max-width: 900px;
+	margin: 0px auto;
+}
+
+.sliderContainer {
+	width:100%;
+}
+
 #third {
     background-color: black;
 }
 
+.panel {
+	padding-top:40px;
+}
 
 .grayscale {
 /*	-webkit-filter: grayscale(100%);
