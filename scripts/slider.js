@@ -1,8 +1,9 @@
 
 /* Slider class, maintain proper pagination */
-function Slider(id, pictStruct) {
+function Slider(id, pictStruct, dark) {
 	this.id_ = id;
 	this.pictStruct_ = pictStruct;
+	this.dark_ = dark;
 	this.activePicture_ = 0;	
 
 	this.pictures_ = 0;
@@ -55,7 +56,7 @@ Slider.prototype.findPict = function(pageNo) {
 }
 
 Slider.prototype.highlightPage = function(page) {
-	$(page).siblings().attr( "class", "paginationRect unselectedRectDark");
+	$(page).siblings().attr( "class", "paginationRect unselectedRect" + (this.dark_ ? "Dark" : "Bright"));
 	$(page).attr( "class", "paginationRect selectedRect");
 }
 
@@ -103,7 +104,16 @@ var laptopPictPerPage = {
 	6: 4
 };
 
+var thirdPictPerPage = {
+	0: 2,
+	1: 2,
+	2: 2,
+	3: 2,
+	4: 4,
+	5: 3,
+};
+
 /* slider instances */
-var laptopSlider = new Slider('laptop', laptopPictPerPage);
-var thirdSlider = new Slider('third', laptopPictPerPage);   //TODO nowa kolejność
+var laptopSlider = new Slider('laptop', laptopPictPerPage, true);
+var thirdSlider = new Slider('third', thirdPictPerPage, false);   //TODO nowa kolejność
 
