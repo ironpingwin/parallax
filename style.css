@@ -210,6 +210,10 @@ h2 {
 	cursor: pointer;
 }
 
+#third {
+    background-color: black;
+}
+
 
 .grayscale {
 /*	-webkit-filter: grayscale(100%);

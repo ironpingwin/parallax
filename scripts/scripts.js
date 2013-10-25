@@ -42,6 +42,11 @@ $( document ).ready(function() {
 		width: SLIDER_WIDTH,
 		height: SLIDER_HEIGHT
 	});
+    
+    $('#thirdSlider').slidesjs({
+        width: SLIDER_WIDTH,
+        height: SLIDER_HEIGHT
+    });    
 	
 
 	// remember initial class values
@@ -186,7 +191,7 @@ var laptopPictPerPage = {
 };
 
 var laptopSlider = new Slider('laptop', laptopPictPerPage);
-
+var thirdSlider = new Slider('third', laptopPictPerPage);   //TODO nowa kolejność
 
 
 
