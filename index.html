@@ -25,10 +25,10 @@
 			<div class="left">
 				<a id="aFirst" href="#second" >PROJEKTY WWW</a>
 				<a id="aSecond" href="#third" >PROJEKTY DTP</a>
-				<a id="aThird" href="#third" >KOMUNIKACJA WIZUALNA</a>
-				<a id="aFourth" href="#third" >KULTURA</a>
-				<a id="aFifth" href="#third" >ANIMACJA</a>
-				<a id="aSixth" href="#third" >WARSZTATY KREATYWNE</a>
+				<a id="aThird" href="#fourth" >KOMUNIKACJA WIZUALNA</a>
+				<a id="aFourth" href="#fifth" >KULTURA</a>
+				<a id="aFifth" href="#sixth" >ANIMACJA</a>
+				<a id="aSixth" href="#seventh" >WARSZTATY KREATYWNE</a>
 			</div>
 		</div>
 	</div>
@@ -51,8 +51,8 @@
 				<div class="rectTurnRight">
 					<div class="rectInner" onmouseover="zoomInRect(this);" onmouseout="zoomOutRect(this);">
 						<img id="pict1" src="pict/grafika www1.jpg" width="230" height="230" class="rectPict grayscale" >
-						<a href="#third" class="rectHalf hidden">projekty www<br><br>
-							<img src="pict/arrowDownWhite.svg">
+						<a href="#second" class="rectHalf hidden">
+							projekty www<br><br><img src="pict/arrowDownWhite.svg">
 						</a>
 					</div>
 				</div>
@@ -71,7 +71,7 @@
 				<div class="rectTurnRight">
 					<div class="rectInner" onmouseover="zoomInRect(this);" onmouseout="zoomOutRect(this);" >
 						<img src="pict/kultura1.jpg" width="230" height="230" class="rectPict" >
-						<a href="#third" class="rectHalf hidden">
+						<a href="#fifth" class="rectHalf hidden">
 							kultura<br><br><img src="pict/arrowDownWhite.svg">
 						</a>
 					</div>
@@ -91,7 +91,7 @@
 				<div class="rectTurnRight">
 					<div class="rectInner" onmouseover="zoomInRect(this);" onmouseout="zoomOutRect(this);">
 						<img src="pict/1 animacja.jpg" width="230" height="230" class="rectPict" >
-						<a href="#third" class="rectHalf hidden">
+						<a href="#sixth" class="rectHalf hidden">
 							animacja<br><br><img src="pict/arrowDownWhite.svg">
 						</a>
 					</div>
@@ -101,7 +101,7 @@
 				<div class="rectTurnRight">
 					<div class="rectInner" onmouseover="zoomInRect(this);" onmouseout="zoomOutRect(this);" >
 						<img src="pict/kultura2.jpg" width="230" height="230" class="rectPict" >
-						<a href="#third" class="rectHalf hidden">
+						<a href="#fifth" class="rectHalf hidden">
 							kultura<br><br><img src="pict/arrowDownWhite.svg">
 						</a>
 					</div>
@@ -121,7 +121,9 @@
 				<div class="rectTurnRight">
 					<div class="rectInner" onmouseover="zoomInRect(this);" onmouseout="zoomOutRect(this);">
 						<img src="pict/grafika DTP 1.jpg" width="230" height="230" class="rectPict" >
-						<a href="#third" class="rectHalf hidden">projekty DTP<br><br><img src="pict/arrowDownWhite.svg"></a>
+						<a href="#third" class="rectHalf hidden">
+							projekty DTP<br><br><img src="pict/arrowDownWhite.svg">
+						</a>
 					</div>
 				</div>
 			</div>
@@ -129,7 +131,7 @@
 				<div class="rectTurnRight">
 					<div class="rectInner" onmouseover="zoomInRect(this);" onmouseout="zoomOutRect(this);">
 						<img src="pict/warsztaty kreatywne 1.jpg" width="230" height="230" class="rectPict" >
-						<a href="#third" class="rectHalf hidden">
+						<a href="#seventh" class="rectHalf hidden">
 							warsztaty kreatywne<br><br><img src="pict/arrowDownWhite.svg">
 						</a>
 					</div>
@@ -237,7 +239,7 @@
 	</div>
 	
 	<div id="third" class="panel white">
-		<div id="thirdSliderContainer" class="sliderContainer">
+		<div class="sliderContainer">
 			<div class="sliderInnerContainer">
 				<div id="thirdSlider" class="slider">
                 	<img src="pict/DTP/Wisla.png" >
@@ -247,41 +249,365 @@
 					<img src="pict/DTP/Klub Mam.png" >
 					<img src="pict/DTP/nateo.jpg" >
 					
-					<a href="#" id="thirdSliderLeftDummy" class="slidesjs-previous slidesjs-navigation"></a>
-					<a href="#" id="thirdSliderRightDummy" class="slidesjs-next slidesjs-navigation"></a>
+					<a href="#" class="slidesjs-previous slidesjs-navigation"></a>
+					<a href="#" class="slidesjs-next slidesjs-navigation"></a>
 				</div>
 				<svg version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					width="54.566px" height="108px" viewBox="0 0 54.566 108" enable-background="new 0 0 54.566 108" xml:space="preserve"
-					class="sliderArrows sliderLeft" onclick="thirdSlider.prevPict();" >
+					class="sliderArrows sliderLeft" onclick="prevPict(this);" >
 					<polygon fill="#C41157" points="54.188,101.762 6.713,54.005 54.188,6.909 54.188,0.024 0,54.193 54.188,108 "/>
 				</svg>
 				<svg version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					width="54.566px" height="108px" viewBox="0 0 54.566 108" enable-background="new 0 0 54.566 108" xml:space="preserve"
-					class="sliderArrows sliderRight" onclick="thirdSlider.nextPict();">
+					class="sliderArrows sliderRight" onclick="nextPict(this);">
 					<polygon fill="#C41157" points="0,108 54.188,54.193 0,0.024 0,6.909 47.475,54.005 0,101.762 "/>
 				</svg>
 				<div id="thirdText" class="sliderText centralLayer">
 					<div class="pagination">
-						<svg class="paginationRect selectedRect" width="25" height="25" onclick="thirdSlider.pageClick(this);" >
+						<svg class="paginationRect selectedRect" width="25" height="25" onclick="pageClick(this);" >
 							<rect x="0" y="0" width="25" height="25"/>
 						</svg>
-						<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="thirdSlider.pageClick(this);">
+						<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
 							<rect x="0" y="0" width="25" height="25"/>
 						</svg>
-						<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="thirdSlider.pageClick(this);">
+						<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
 							<rect x="0" y="0" width="25" height="25"/>
 						</svg>
-						<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="thirdSlider.pageClick(this);">
+						<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
 							<rect x="0" y="0" width="25" height="25"/>
 						</svg>
-						<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="thirdSlider.pageClick(this);">
+						<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
 							<rect x="0" y="0" width="25" height="25"/>
 						</svg>
-						<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="thirdSlider.pageClick(this);">
+						<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
 							<rect x="0" y="0" width="25" height="25"/>
 						</svg>
 					</div>
-					<h1>projekty www</h1>
+					<h1>projekty DTP</h1>
+					<div class="descriptions">
+						<div>
+							<h2>Serwis www Fundacji Sue Ryder</h2>
+							Stworzenie nowej szaty graficznej serwisu i spójnej komunikacji wizualnej fundacji, wykonany na zlecenie agencji interaktywnj HINT.
+						</div>
+						<div class="hidden">
+							<h2>Strona wizerunkowa Glamsmile Polska</h2>
+							Projekt graficzny strony www utrzymany w stylistyce międzynarodowej marki licówek Glamsmile, wykonany na zlecenie agencji interaktywnej HINT.
+						</div>
+						<div class="hidden">
+							<h2>Serwis PGNiG Termika</h2>
+							Projekt serwisu www elektrociepłowni PGNiG Termika, wykonany na zlecenie agencji interaktywnej HINT.
+						</div>
+						<div class="hidden">
+							<h2>Serwis Platformy n</h2>
+							Wybrane przykłady projektów przebudowy serwisu Platformy n, wykonanywane na zlecenie agencji interaktywnej HINT.
+						</div>
+						<div class="hidden">
+							<h2>Newslettery</h2>
+							Wybrane projekty interaktywnych newsletterów, wykonanywane na zlecenie agencji interaktywnej HINT.
+						</div>
+						<div class="hidden">
+							<h2>Strona firmowa Derma Profil</h2>
+							Projekt strony www firmy kosmetycznej, wykonany na zlecenie agencji interaktywnej HINT.
+						</div>
+						<div class="hidden">
+							<h2>Strona produktów marki Acnaid</h2>
+							Projekt strony www kosmetyków Acnaid stylizowany na "kolorowe czasopismo", wykonany na zlecenie agencji interaktywnej HINT. 
+						</div>
+					</div>					
+				</div>
+            </div>
+        </div>
+	</div>
+	
+	<div id="fourth" class="panel black">
+		<div class="sliderContainer">
+			<div class="sliderInnerContainer">
+				<div id="fourthSlider" class="slider">
+                	<img src="pict/DTP/Wisla.png" >
+					<img src="pict/DTP/CG.png" >
+					<img src="pict/DTP/Lagedore.png" >
+					<img src="pict/DTP/DKL.png" >
+					<img src="pict/DTP/Klub Mam.png" >
+					<img src="pict/DTP/nateo.jpg" >
+					
+					<a href="#" class="slidesjs-previous slidesjs-navigation"></a>
+					<a href="#" class="slidesjs-next slidesjs-navigation"></a>
+				</div>
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					width="54.566px" height="108px" viewBox="0 0 54.566 108" enable-background="new 0 0 54.566 108" xml:space="preserve"
+					class="sliderArrows sliderLeft" onclick="prevPict(this);" >
+					<polygon fill="#C41157" points="54.188,101.762 6.713,54.005 54.188,6.909 54.188,0.024 0,54.193 54.188,108 "/>
+				</svg>
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					width="54.566px" height="108px" viewBox="0 0 54.566 108" enable-background="new 0 0 54.566 108" xml:space="preserve"
+					class="sliderArrows sliderRight" onclick="nextPict(this);">
+					<polygon fill="#C41157" points="0,108 54.188,54.193 0,0.024 0,6.909 47.475,54.005 0,101.762 "/>
+				</svg>
+				<div id="fourthText" class="sliderText centralLayer">
+					<div class="pagination">
+						<svg class="paginationRect selectedRect" width="25" height="25" onclick="pageClick(this);" >
+							<rect x="0" y="0" width="25" height="25"/>
+						</svg>
+						<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="pageClick(this);">
+							<rect x="0" y="0" width="25" height="25"/>
+						</svg>
+						<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="pageClick(this);">
+							<rect x="0" y="0" width="25" height="25"/>
+						</svg>
+						<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="pageClick(this);">
+							<rect x="0" y="0" width="25" height="25"/>
+						</svg>
+						<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="pageClick(this);">
+							<rect x="0" y="0" width="25" height="25"/>
+						</svg>
+						<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="pageClick(this);">
+							<rect x="0" y="0" width="25" height="25"/>
+						</svg>
+					</div>
+					<h1>komunikacja wizualna</h1>
+					<div class="descriptions">
+						<div>
+							<h2>Serwis www Fundacji Sue Ryder</h2>
+							Stworzenie nowej szaty graficznej serwisu i spójnej komunikacji wizualnej fundacji, wykonany na zlecenie agencji interaktywnj HINT.
+						</div>
+						<div class="hidden">
+							<h2>Strona wizerunkowa Glamsmile Polska</h2>
+							Projekt graficzny strony www utrzymany w stylistyce międzynarodowej marki licówek Glamsmile, wykonany na zlecenie agencji interaktywnej HINT.
+						</div>
+						<div class="hidden">
+							<h2>Serwis PGNiG Termika</h2>
+							Projekt serwisu www elektrociepłowni PGNiG Termika, wykonany na zlecenie agencji interaktywnej HINT.
+						</div>
+						<div class="hidden">
+							<h2>Serwis Platformy n</h2>
+							Wybrane przykłady projektów przebudowy serwisu Platformy n, wykonanywane na zlecenie agencji interaktywnej HINT.
+						</div>
+						<div class="hidden">
+							<h2>Newslettery</h2>
+							Wybrane projekty interaktywnych newsletterów, wykonanywane na zlecenie agencji interaktywnej HINT.
+						</div>
+						<div class="hidden">
+							<h2>Strona firmowa Derma Profil</h2>
+							Projekt strony www firmy kosmetycznej, wykonany na zlecenie agencji interaktywnej HINT.
+						</div>
+						<div class="hidden">
+							<h2>Strona produktów marki Acnaid</h2>
+							Projekt strony www kosmetyków Acnaid stylizowany na "kolorowe czasopismo", wykonany na zlecenie agencji interaktywnej HINT. 
+						</div>
+					</div>					
+				</div>
+            </div>
+        </div>
+	</div>
+	
+	<div id="fifth" class="panel white">
+		<div class="sliderContainer">
+			<div class="sliderInnerContainer">
+				<div id="fifthSlider" class="slider">
+                	<img src="pict/DTP/Wisla.png" >
+					<img src="pict/DTP/CG.png" >
+					<img src="pict/DTP/Lagedore.png" >
+					<img src="pict/DTP/DKL.png" >
+					<img src="pict/DTP/Klub Mam.png" >
+					<img src="pict/DTP/nateo.jpg" >
+					
+					<a href="#" class="slidesjs-previous slidesjs-navigation"></a>
+					<a href="#" class="slidesjs-next slidesjs-navigation"></a>
+				</div>
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					width="54.566px" height="108px" viewBox="0 0 54.566 108" enable-background="new 0 0 54.566 108" xml:space="preserve"
+					class="sliderArrows sliderLeft" onclick="prevPict(this);" >
+					<polygon fill="#C41157" points="54.188,101.762 6.713,54.005 54.188,6.909 54.188,0.024 0,54.193 54.188,108 "/>
+				</svg>
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					width="54.566px" height="108px" viewBox="0 0 54.566 108" enable-background="new 0 0 54.566 108" xml:space="preserve"
+					class="sliderArrows sliderRight" onclick="nextPict(this);">
+					<polygon fill="#C41157" points="0,108 54.188,54.193 0,0.024 0,6.909 47.475,54.005 0,101.762 "/>
+				</svg>
+				<div id="fifthText" class="sliderText centralLayer">
+					<div class="pagination">
+						<svg class="paginationRect selectedRect" width="25" height="25" onclick="pageClick(this);" >
+							<rect x="0" y="0" width="25" height="25"/>
+						</svg>
+						<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
+							<rect x="0" y="0" width="25" height="25"/>
+						</svg>
+						<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
+							<rect x="0" y="0" width="25" height="25"/>
+						</svg>
+						<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
+							<rect x="0" y="0" width="25" height="25"/>
+						</svg>
+						<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
+							<rect x="0" y="0" width="25" height="25"/>
+						</svg>
+						<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
+							<rect x="0" y="0" width="25" height="25"/>
+						</svg>
+					</div>
+					<h1>kultura</h1>
+					<div class="descriptions">
+						<div>
+							<h2>Serwis www Fundacji Sue Ryder</h2>
+							Stworzenie nowej szaty graficznej serwisu i spójnej komunikacji wizualnej fundacji, wykonany na zlecenie agencji interaktywnj HINT.
+						</div>
+						<div class="hidden">
+							<h2>Strona wizerunkowa Glamsmile Polska</h2>
+							Projekt graficzny strony www utrzymany w stylistyce międzynarodowej marki licówek Glamsmile, wykonany na zlecenie agencji interaktywnej HINT.
+						</div>
+						<div class="hidden">
+							<h2>Serwis PGNiG Termika</h2>
+							Projekt serwisu www elektrociepłowni PGNiG Termika, wykonany na zlecenie agencji interaktywnej HINT.
+						</div>
+						<div class="hidden">
+							<h2>Serwis Platformy n</h2>
+							Wybrane przykłady projektów przebudowy serwisu Platformy n, wykonanywane na zlecenie agencji interaktywnej HINT.
+						</div>
+						<div class="hidden">
+							<h2>Newslettery</h2>
+							Wybrane projekty interaktywnych newsletterów, wykonanywane na zlecenie agencji interaktywnej HINT.
+						</div>
+						<div class="hidden">
+							<h2>Strona firmowa Derma Profil</h2>
+							Projekt strony www firmy kosmetycznej, wykonany na zlecenie agencji interaktywnej HINT.
+						</div>
+						<div class="hidden">
+							<h2>Strona produktów marki Acnaid</h2>
+							Projekt strony www kosmetyków Acnaid stylizowany na "kolorowe czasopismo", wykonany na zlecenie agencji interaktywnej HINT. 
+						</div>
+					</div>					
+				</div>
+            </div>
+        </div>
+	</div>
+
+	<div id="sixth" class="panel black">
+		<div class="sliderContainer">
+			<div class="sliderInnerContainer">
+				<div id="sixthSlider" class="slider">
+                	<img src="pict/DTP/Wisla.png" >
+					<img src="pict/DTP/CG.png" >
+					<img src="pict/DTP/Lagedore.png" >
+					<img src="pict/DTP/DKL.png" >
+					<img src="pict/DTP/Klub Mam.png" >
+					<img src="pict/DTP/nateo.jpg" >
+					
+					<a href="#" class="slidesjs-previous slidesjs-navigation"></a>
+					<a href="#" class="slidesjs-next slidesjs-navigation"></a>
+				</div>
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					width="54.566px" height="108px" viewBox="0 0 54.566 108" enable-background="new 0 0 54.566 108" xml:space="preserve"
+					class="sliderArrows sliderLeft" onclick="prevPict(this);" >
+					<polygon fill="#C41157" points="54.188,101.762 6.713,54.005 54.188,6.909 54.188,0.024 0,54.193 54.188,108 "/>
+				</svg>
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					width="54.566px" height="108px" viewBox="0 0 54.566 108" enable-background="new 0 0 54.566 108" xml:space="preserve"
+					class="sliderArrows sliderRight" onclick="nextPict(this);">
+					<polygon fill="#C41157" points="0,108 54.188,54.193 0,0.024 0,6.909 47.475,54.005 0,101.762 "/>
+				</svg>
+				<div id="sixthText" class="sliderText centralLayer">
+					<div class="pagination">
+						<svg class="paginationRect selectedRect" width="25" height="25" onclick="pageClick(this);" >
+							<rect x="0" y="0" width="25" height="25"/>
+						</svg>
+						<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="pageClick(this);">
+							<rect x="0" y="0" width="25" height="25"/>
+						</svg>
+						<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="pageClick(this);">
+							<rect x="0" y="0" width="25" height="25"/>
+						</svg>
+						<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="pageClick(this);">
+							<rect x="0" y="0" width="25" height="25"/>
+						</svg>
+						<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="pageClick(this);">
+							<rect x="0" y="0" width="25" height="25"/>
+						</svg>
+						<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="pageClick(this);">
+							<rect x="0" y="0" width="25" height="25"/>
+						</svg>
+					</div>
+					<h1>animacje</h1>
+					<div class="descriptions">
+						<div>
+							<h2>Serwis www Fundacji Sue Ryder</h2>
+							Stworzenie nowej szaty graficznej serwisu i spójnej komunikacji wizualnej fundacji, wykonany na zlecenie agencji interaktywnj HINT.
+						</div>
+						<div class="hidden">
+							<h2>Strona wizerunkowa Glamsmile Polska</h2>
+							Projekt graficzny strony www utrzymany w stylistyce międzynarodowej marki licówek Glamsmile, wykonany na zlecenie agencji interaktywnej HINT.
+						</div>
+						<div class="hidden">
+							<h2>Serwis PGNiG Termika</h2>
+							Projekt serwisu www elektrociepłowni PGNiG Termika, wykonany na zlecenie agencji interaktywnej HINT.
+						</div>
+						<div class="hidden">
+							<h2>Serwis Platformy n</h2>
+							Wybrane przykłady projektów przebudowy serwisu Platformy n, wykonanywane na zlecenie agencji interaktywnej HINT.
+						</div>
+						<div class="hidden">
+							<h2>Newslettery</h2>
+							Wybrane projekty interaktywnych newsletterów, wykonanywane na zlecenie agencji interaktywnej HINT.
+						</div>
+						<div class="hidden">
+							<h2>Strona firmowa Derma Profil</h2>
+							Projekt strony www firmy kosmetycznej, wykonany na zlecenie agencji interaktywnej HINT.
+						</div>
+						<div class="hidden">
+							<h2>Strona produktów marki Acnaid</h2>
+							Projekt strony www kosmetyków Acnaid stylizowany na "kolorowe czasopismo", wykonany na zlecenie agencji interaktywnej HINT. 
+						</div>
+					</div>					
+				</div>
+            </div>
+        </div>
+	</div>
+
+	<div id="seventh" class="panel white">
+		<div class="sliderContainer">
+			<div class="sliderInnerContainer">
+				<div id="seventhSlider" class="slider">
+                	<img src="pict/DTP/Wisla.png" >
+					<img src="pict/DTP/CG.png" >
+					<img src="pict/DTP/Lagedore.png" >
+					<img src="pict/DTP/DKL.png" >
+					<img src="pict/DTP/Klub Mam.png" >
+					<img src="pict/DTP/nateo.jpg" >
+					
+					<a href="#" class="slidesjs-previous slidesjs-navigation"></a>
+					<a href="#" class="slidesjs-next slidesjs-navigation"></a>
+				</div>
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					width="54.566px" height="108px" viewBox="0 0 54.566 108" enable-background="new 0 0 54.566 108" xml:space="preserve"
+					class="sliderArrows sliderLeft" onclick="prevPict(this);" >
+					<polygon fill="#C41157" points="54.188,101.762 6.713,54.005 54.188,6.909 54.188,0.024 0,54.193 54.188,108 "/>
+				</svg>
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					width="54.566px" height="108px" viewBox="0 0 54.566 108" enable-background="new 0 0 54.566 108" xml:space="preserve"
+					class="sliderArrows sliderRight" onclick="nextPict(this);">
+					<polygon fill="#C41157" points="0,108 54.188,54.193 0,0.024 0,6.909 47.475,54.005 0,101.762 "/>
+				</svg>
+				<div id="seventhText" class="sliderText centralLayer">
+					<div class="pagination">
+						<svg class="paginationRect selectedRect" width="25" height="25" onclick="pageClick(this);" >
+							<rect x="0" y="0" width="25" height="25"/>
+						</svg>
+						<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
+							<rect x="0" y="0" width="25" height="25"/>
+						</svg>
+						<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
+							<rect x="0" y="0" width="25" height="25"/>
+						</svg>
+						<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
+							<rect x="0" y="0" width="25" height="25"/>
+						</svg>
+						<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
+							<rect x="0" y="0" width="25" height="25"/>
+						</svg>
+						<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
+							<rect x="0" y="0" width="25" height="25"/>
+						</svg>
+					</div>
+					<h1>warsztaty kreatywne</h1>
 					<div class="descriptions">
 						<div>
 							<h2>Serwis www Fundacji Sue Ryder</h2>

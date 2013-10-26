@@ -26,6 +26,10 @@ h2 {
 	color: white;
 }
 
+.black {
+	color: black;
+}
+
 .photo {
 /* 	background-attachment: fixed; */
 	background-position: 50% 0;
@@ -125,7 +129,7 @@ h2 {
 }
 
 .panel {
-	padding-top:40px;
+	padding-top:60px;
 	padding-bottom:40px;
 }
 
@@ -142,7 +146,7 @@ h2 {
 
 #laptopSliderContainer {
 	position: absolute;
-	top: 1022px;
+	top: 1042px;
 	width:100%;
 }
 
@@ -239,7 +243,21 @@ h2 {
     background-color: black;
 }
 
+#fourth {
+	background-color: white;
+}
 
+#fifth {
+	background-color: black;
+}
+
+#sixth {
+	background-color: white;
+}
+
+#seventh {
+	background-color: black;
+}
 
 .grayscale {
 /*	-webkit-filter: grayscale(100%);

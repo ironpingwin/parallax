@@ -12,8 +12,11 @@ function Slider(id, pictStruct, dark) {
 	}
 }
 
-Slider.prototype.prevPict = function() {
-	$('#' + this.id_ + 'SliderLeft' + 'Dummy').click();
+Slider.prototype.prevPict = function(clicked) {
+	if (clicked)
+		$(clicked).siblings('div.slider').children('a.slidesjs-previous').click();
+	else
+		$('#' + this.id_ + 'SliderLeft' + 'Dummy').click();
 	this.activePicture_--;
 	if (this.activePicture_ < 0)
 		this.activePicture_ = this.pictures_ -1;
@@ -21,8 +24,11 @@ Slider.prototype.prevPict = function() {
 	return false;
 }
 
-Slider.prototype.nextPict = function() {
-	$('#' + this.id_ + 'SliderRight' + 'Dummy').click();
+Slider.prototype.nextPict = function(clicked) {
+	if (clicked)
+		$(clicked).siblings('div.slider').children('a.slidesjs-next').click();
+	else
+		$('#' + this.id_ + 'SliderRight' + 'Dummy').click();
 	this.activePicture_++;
 	if (this.activePicture_ == this.pictures_)
 		this.activePicture_ = 0;
@@ -93,6 +99,27 @@ Slider.prototype.pageClick = function(clicked) {
 	this.showText(pageNo);
 }
 
+/* find object id from <div class="panel"> parent */
+function getID(thisObj) {
+	return $(thisObj).closest('div.panel').attr('id');
+}
+
+/* find object name and click apriopriate object's method */
+function pageClick(thisObj) {
+	var id = getID(thisObj);
+	window[id+'Slider'].pageClick(thisObj);
+}
+
+function prevPict(thisObj) {
+	var id = getID(thisObj);
+	window[id+'Slider'].prevPict(thisObj);	
+}
+
+function nextPict(thisObj) {
+	var id = getID(thisObj);
+	window[id+'Slider'].nextPict(thisObj);	
+}
+
 /* Number of pictures per single page */
 var laptopPictPerPage = {
 	0: 2,
@@ -113,7 +140,47 @@ var thirdPictPerPage = {
 	5: 1,
 };
 
+var fourthPictPerPage = {
+	0: 1,
+	1: 1,
+	2: 1,
+	3: 1,
+	4: 1,
+	5: 1,
+};
+
+var fifthPictPerPage = {
+	0: 1,
+	1: 1,
+	2: 1,
+	3: 1,
+	4: 1,
+	5: 1,
+};
+
+var sixthPictPerPage = {
+	0: 1,
+	1: 1,
+	2: 1,
+	3: 1,
+	4: 1,
+	5: 1,
+};
+
+var seventhPictPerPage = {
+	0: 1,
+	1: 1,
+	2: 1,
+	3: 1,
+	4: 1,
+	5: 1,
+};
+
 /* slider instances */
 var laptopSlider = new Slider('laptop', laptopPictPerPage, true);
-var thirdSlider = new Slider('third', thirdPictPerPage, false);   //TODO nowa kolejność
+var thirdSlider = new Slider('third', thirdPictPerPage, false);
+var fourthSlider = new Slider('fourth', fourthPictPerPage, true);
+var fifthSlider = new Slider('fifth', fifthPictPerPage, false);
+var sixthSlider = new Slider('sixth', sixthPictPerPage, true);
+var seventhSlider = new Slider('seventh', seventhPictPerPage, false);
 
