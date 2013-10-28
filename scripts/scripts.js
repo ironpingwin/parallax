@@ -3,6 +3,8 @@
 var CENTRAL_SQUARE_SHIFT = 104;
 var LAPTOP_SLIDER_WIDTH = 744;
 var LAPTOP_SLIDER_HEIGHT = 468;
+var TV_SLIDER_WIDTH = 720;
+var TV_SLIDER_HEIGHT = 405;
 
 var SLIDER_HEIGHT = 600;
 var SLIDER_WIDTH = 900;
@@ -60,8 +62,8 @@ $( document ).ready(function() {
     });
 	
     $('#sixthSlider').slidesjs({
-        width: SLIDER_WIDTH,
-        height: SLIDER_HEIGHT
+        width: TV_SLIDER_WIDTH,
+        height: TV_SLIDER_HEIGHT
     });
 
     $('#seventhSlider').slidesjs({

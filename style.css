@@ -246,6 +246,11 @@ h2 {
 	margin: 0px auto;
 }
 
+.sliderTV {
+	max-width:720px;
+	margin-bottom: 100px;
+}
+
 .sliderContainer {
 	width:100%;
 }
@@ -269,6 +274,13 @@ h2 {
 
 #sixth {
 	background-color: white;
+}
+
+.tv {
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	background-image: url(pict/telewizorWWW.png);
+	padding-top: 60px;
 }
 
 #seventh {
