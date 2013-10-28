@@ -13,6 +13,7 @@ h1 {
 }
 
 h2 {
+	color: #c21b60;
 	font-size: 16pt;
 	font-weight: normal;
 }
@@ -114,7 +115,7 @@ h2 {
 	color: #AFCD17;
 	text-decoration: none;
 	margin-right: 30px;
-	font-size: x-small;
+	font-size: 10pt;
 }
 
 #centerButtons {
