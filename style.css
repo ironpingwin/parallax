@@ -114,8 +114,12 @@ h2 {
 #menu a {
 	color: #d7f91d;
 	text-decoration: none;
-	margin-right: 30px;
+	margin-right: 25px;
 	font-size: 9pt;
+}
+
+#menu .last {
+	margin-right: 0px;
 }
 
 #centerButtons {
@@ -248,7 +252,7 @@ h2 {
 }
 
 .sliderTV {
-	max-width:720px;
+	max-width:700px;
 	margin-bottom: 100px;
 }
 
@@ -281,7 +285,7 @@ h2 {
 	background-position: 50% 0;
 	background-repeat: no-repeat;
 	background-image: url(pict/telewizorWWW.png);
-	padding-top: 60px;
+	padding-top: 25px;
 }
 
 #seventh {
