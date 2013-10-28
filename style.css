@@ -133,6 +133,22 @@ h2 {
 	padding-bottom:40px;
 }
 
+#footer {
+	background-image: url(pict/stopka.png);
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	height:330px;
+	color: #4051A3;
+	width:100%;
+}
+
+#footerCV {
+	width: 140px;
+	top: 200px;
+	position: relative;
+	text-align: center;
+}
+
 #laptop {
 	background-image: url(pict/laptop.png);
 	background-repeat: no-repeat;
@@ -257,6 +273,7 @@ h2 {
 
 #seventh {
 	background-color: black;
+	padding-bottom: 200px;
 }
 
 .grayscale {
