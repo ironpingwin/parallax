@@ -6,7 +6,7 @@ var LAPTOP_SLIDER_HEIGHT = 468;
 var TV_SLIDER_WIDTH = 700;
 var TV_SLIDER_HEIGHT = 394;
 
-var SLIDER_HEIGHT = 600;
+var SLIDER_HEIGHT = 450;
 var SLIDER_WIDTH = 900;
 
 // $(function(){

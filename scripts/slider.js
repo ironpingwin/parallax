@@ -147,12 +147,17 @@ var fourthPictPerPage = {
 	3: 1,
 	4: 1,
 	5: 1,
+	6: 1,
+	7: 1,
+	8: 1,
+	9:1
 };
 
 var fifthPictPerPage = {
-	0: 5,
+	0: 11,
 	1: 5,
-	2: 3
+	2: 5,
+	3: 3
 };
 
 var sixthPictPerPage = {
