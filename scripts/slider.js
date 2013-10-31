@@ -150,7 +150,7 @@ var fourthPictPerPage = {
 };
 
 var fifthPictPerPage = {
-	0: 10,
+	0: 11,
 	1: 4,
 	2: 3,
 	3: 3
