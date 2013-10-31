@@ -179,7 +179,7 @@ h2 {
 }
 
 .sliderArrows {
-	top: 200px;
+	top: 170px;
 }
 
 .sliderLeft {
@@ -237,6 +237,7 @@ h2 {
 
 .pagination {
 	text-align: right;
+	float: right;
 }
 
 .paginationRect {
