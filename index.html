@@ -24,12 +24,13 @@
 		<div id="centerButtons" >
 			<a href="#first"><img id="opa" src="pict/opa.png" class="left"></a>
 			<div class="left">
-				<a id="aFirst" href="#second" >PROJEKTY WWW</a>
-				<a id="aSecond" href="#third" >PROJEKTY DTP</a>
-				<a id="aThird" href="#fourth" >KOMUNIKACJA WIZUALNA</a>
-				<a id="aFourth" href="#fifth" >KULTURA</a>
-				<a id="aFifth" href="#sixth" >ANIMACJA</a>
-				<a id="aSixth" href="#seventh" >WARSZTATY KREATYWNE</a>
+				<a id="aFirst" href="#second" >projekty www</a>
+				<a id="aSecond" href="#third" >projekty DTP</a>
+				<a id="aThird" href="#fourth" >logotypy</a>
+				<a id="aFourth" href="#fifth" >kultura</a>
+				<a id="aFifth" href="#sixth" >animacja</a>
+				<a id="aSixth" href="#seventh" >warsztaty kreatywne</a>
+				<a id="aSeventh" class="last" href="#footer" >kontakt</a>
 			</div>
 		</div>
 	</div>
@@ -38,7 +39,7 @@
 	<div id="first" class="photo first" data-stellar-background-ratio="0.5">
 		<div id="firstText" class="centralLayer">
 			<h1>Anna Bąk</h1>
-			<h2 class="subtitle">
+			<h2 class="subtitle white">
 				Absolwentka historii sztuki <br/>
                  oraz grafiki komputerowej
 			</h2>
@@ -48,10 +49,10 @@
 		</div>
 		
 		<div id="tiles" class="centralLayer">
-			<div class="rectTurnLeft col3 row1 grayscale">
+			<div class="rectTurnLeft col3 row1">
 				<div class="rectTurnRight">
 					<div class="rectInner" onmouseover="zoomInRect(this);" onmouseout="zoomOutRect(this);">
-						<img id="pict1" src="pict/grafika www1.jpg" width="230" height="230" class="rectPict grayscale" >
+						<img id="pict1" src="pict/grafika www1.jpg" width="230" height="230" class="rectPict" >
 						<a href="#second" class="rectHalf hidden">
 							projekty www<br><br><img src="pict/arrowDownWhite.svg">
 						</a>
@@ -61,7 +62,7 @@
 			<div class="rectTurnLeft col2 row2">
 				<div class="rectTurnRight">
 					<div class="rectInner" onmouseover="zoomInRect(this);" onmouseout="zoomOutRect(this);">
-						<img src="pict/grafika www2.jpg" width="230" height="230" class="rectPict" >
+						<img id="pict2" src="pict/grafika www2.jpg" width="230" height="230" class="rectPict" >
 						<a href="#second" class="rectHalf hidden">
 							projekty www<br><br><img src="pict/arrowDownWhite.svg">
 						</a>
@@ -71,7 +72,7 @@
 			<div class="rectTurnLeft col4 row2">
 				<div class="rectTurnRight">
 					<div class="rectInner" onmouseover="zoomInRect(this);" onmouseout="zoomOutRect(this);" >
-						<img src="pict/kultura1.jpg" width="230" height="230" class="rectPict" >
+						<img id="pict3" src="pict/kultura1.jpg" width="230" height="230" class="rectPict" >
 						<a href="#fifth" class="rectHalf hidden">
 							kultura<br><br><img src="pict/arrowDownWhite.svg">
 						</a>
@@ -81,7 +82,7 @@
 			<div class="rectTurnLeft col1 row3">
 				<div class="rectTurnRight">
 					<div class="rectInner" onmouseover="zoomInRect(this);" onmouseout="zoomOutRect(this);" >
-						<img src="pict/grafika DTP 3.jpg" width="230" height="230" class="rectPict" >
+						<img id="pict4" src="pict/grafika DTP 3.jpg" width="230" height="230" class="rectPict" >
 						<a href="#third" class="rectHalf hidden">
 							projekty DTP<br><br><img src="pict/arrowDownWhite.svg">
 						</a>
@@ -91,7 +92,7 @@
 			<div class="rectTurnLeft col3 row3">
 				<div class="rectTurnRight">
 					<div class="rectInner" onmouseover="zoomInRect(this);" onmouseout="zoomOutRect(this);">
-						<img src="pict/1 animacja.jpg" width="230" height="230" class="rectPict" >
+						<img id="pict5" src="pict/1 animacja.jpg" width="230" height="230" class="rectPict" >
 						<a href="#sixth" class="rectHalf hidden">
 							animacja<br><br><img src="pict/arrowDownWhite.svg">
 						</a>
@@ -101,7 +102,7 @@
 			<div class="rectTurnLeft col5 row3">
 				<div class="rectTurnRight">
 					<div class="rectInner" onmouseover="zoomInRect(this);" onmouseout="zoomOutRect(this);" >
-						<img src="pict/kultura2.jpg" width="230" height="230" class="rectPict" >
+						<img id="pict6" src="pict/kultura2.jpg" width="230" height="230" class="rectPict" >
 						<a href="#fifth" class="rectHalf hidden">
 							kultura<br><br><img src="pict/arrowDownWhite.svg">
 						</a>
@@ -111,7 +112,7 @@
 			<div class="rectTurnLeft col2 row4">
 				<div class="rectTurnRight">
 					<div class="rectInner" onmouseover="zoomInRect(this);" onmouseout="zoomOutRect(this);">
-						<img src="pict/grafika DTP 2.jpg" width="230" height="230" class="rectPict">
+						<img id="pict7" src="pict/grafika DTP 2.jpg" width="230" height="230" class="rectPict">
 						<a href="#third" class="rectHalf hidden">
 							projekty DTP<br><br><img src="pict/arrowDownWhite.svg">
 						</a>
@@ -121,7 +122,7 @@
 			<div class="rectTurnLeft col4 row4">
 				<div class="rectTurnRight">
 					<div class="rectInner" onmouseover="zoomInRect(this);" onmouseout="zoomOutRect(this);">
-						<img src="pict/grafika DTP 1.jpg" width="230" height="230" class="rectPict" >
+						<img id="pict8" src="pict/grafika DTP 1.jpg" width="230" height="230" class="rectPict" >
 						<a href="#third" class="rectHalf hidden">
 							projekty DTP<br><br><img src="pict/arrowDownWhite.svg">
 						</a>
@@ -131,7 +132,7 @@
 			<div class="rectTurnLeft col3 row5">
 				<div class="rectTurnRight">
 					<div class="rectInner" onmouseover="zoomInRect(this);" onmouseout="zoomOutRect(this);">
-						<img src="pict/warsztaty kreatywne 1.jpg" width="230" height="230" class="rectPict" >
+						<img id="pict9" src="pict/warsztaty kreatywne 1.jpg" width="230" height="230" class="rectPict" >
 						<a href="#seventh" class="rectHalf hidden">
 							warsztaty kreatywne<br><br><img src="pict/arrowDownWhite.svg">
 						</a>
@@ -182,30 +183,31 @@
 	<div id="second" class="panel">
 		<div id="laptop" class="centralLayer"></div>
 		<div id="laptopText" class="centralLayer">
-			<div class="pagination">
-				<svg class="paginationRect selectedRect" width="25" height="25" onclick="laptopSlider.pageClick(this);" >
-					<rect x="0" y="0" width="25" height="25"/>
-				</svg>
-				<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="laptopSlider.pageClick(this);">
-					<rect x="0" y="0" width="25" height="25"/>
-				</svg>
-				<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="laptopSlider.pageClick(this);">
-					<rect x="0" y="0" width="25" height="25"/>
-				</svg>
-				<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="laptopSlider.pageClick(this);">
-					<rect x="0" y="0" width="25" height="25"/>
-				</svg>
-				<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="laptopSlider.pageClick(this);">
-					<rect x="0" y="0" width="25" height="25"/>
-				</svg>
-				<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="laptopSlider.pageClick(this);">
-					<rect x="0" y="0" width="25" height="25"/>
-				</svg>
-				<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="laptopSlider.pageClick(this);">
-					<rect x="0" y="0" width="25" height="25"/>
-				</svg>
-			</div>
-			<h1>projekty www</h1>
+			<h1>projekty www
+				<div class="pagination">
+					<svg class="paginationRect selectedRect" width="25" height="25" onclick="laptopSlider.pageClick(this);" >
+						<rect x="0" y="0" width="25" height="25"/>
+					</svg>
+					<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="laptopSlider.pageClick(this);">
+						<rect x="0" y="0" width="25" height="25"/>
+					</svg>
+					<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="laptopSlider.pageClick(this);">
+						<rect x="0" y="0" width="25" height="25"/>
+					</svg>
+					<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="laptopSlider.pageClick(this);">
+						<rect x="0" y="0" width="25" height="25"/>
+					</svg>
+					<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="laptopSlider.pageClick(this);">
+						<rect x="0" y="0" width="25" height="25"/>
+					</svg>
+					<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="laptopSlider.pageClick(this);">
+						<rect x="0" y="0" width="25" height="25"/>
+					</svg>
+					<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="laptopSlider.pageClick(this);">
+						<rect x="0" y="0" width="25" height="25"/>
+					</svg>
+				</div>
+			</h1>
 			<div class="descriptions">
 				<div>
 					<h2>Serwis www Fundacji Sue Ryder</h2>
@@ -264,30 +266,32 @@
 					<polygon fill="#C41157" points="0,108 54.188,54.193 0,0.024 0,6.909 47.475,54.005 0,101.762 "/>
 				</svg>
 				<div id="thirdText" class="sliderText centralLayer">
-					<div class="pagination">
-						<svg class="paginationRect selectedRect" width="25" height="25" onclick="pageClick(this);" >
-							<rect x="0" y="0" width="25" height="25"/>
-						</svg>
-						<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
-							<rect x="0" y="0" width="25" height="25"/>
-						</svg>
-						<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
-							<rect x="0" y="0" width="25" height="25"/>
-						</svg>
-						<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
-							<rect x="0" y="0" width="25" height="25"/>
-						</svg>
-						<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
-							<rect x="0" y="0" width="25" height="25"/>
-						</svg>
-						<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
-							<rect x="0" y="0" width="25" height="25"/>
-						</svg>
-					</div>
-					<h1>projekty DTP</h1>
+					<h1>projekty DTP
+						<div class="pagination">
+							<svg class="paginationRect selectedRect" width="25" height="25" onclick="pageClick(this);" >
+								<rect x="0" y="0" width="25" height="25"/>
+							</svg>
+							<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
+								<rect x="0" y="0" width="25" height="25"/>
+							</svg>
+							<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
+								<rect x="0" y="0" width="25" height="25"/>
+							</svg>
+							<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
+								<rect x="0" y="0" width="25" height="25"/>
+							</svg>
+							<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
+								<rect x="0" y="0" width="25" height="25"/>
+							</svg>
+							<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
+								<rect x="0" y="0" width="25" height="25"/>
+							</svg>
+						</div>
+					</h1>
 					<div class="descriptions">
 						<div>
-							<h2>Kwartalnik Literaki Wisła</h2>			Koncepcja graficzna kwartalnika, logotyp, layout, skład tekstu oraz pozyskiwanie materiałów ilustracyjnych. 
+							<h2>Kwartalnik Literaki Wisła</h2>
+							Koncepcja graficzna kwartalnika, logotyp, layout, skład tekstu oraz pozyskiwanie materiałów ilustracyjnych. 
 						</div>
 						<div class="hidden">
 							<h2>Strona wizerunkowa Glamsmile Polska</h2>
@@ -328,11 +332,11 @@
 					<img src="pict/logo/netzine.png" >
 					
 					<img src="pict/logo/wisla.png" >
-					<img src="pict/logo/edent.png" >
+				
                     <img src="pict/logo/mmfreeze.png" >
-                     <img src="pict/logo/klubmam.png" >
-                      <img src="pict/logo/UniwersytetDzieci.png" >
-                      <img src="pict/logo/KorpytaLogo.png" >
+                     <img src="pict/logo/KorpytaLogo.png" >
+                    
+                     
 					
 					<a href="#" class="slidesjs-previous slidesjs-navigation"></a>
 					<a href="#" class="slidesjs-next slidesjs-navigation"></a>
@@ -348,27 +352,28 @@
 					<polygon fill="#C41157" points="0,108 54.188,54.193 0,0.024 0,6.909 47.475,54.005 0,101.762 "/>
 				</svg>
 				<div id="fourthText" class="sliderText centralLayer">
-					<div class="pagination">
-						<svg class="paginationRect selectedRect" width="25" height="25" onclick="pageClick(this);" >
-							<rect x="0" y="0" width="25" height="25"/>
-						</svg>
-						<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="pageClick(this);">
-							<rect x="0" y="0" width="25" height="25"/>
-						</svg>
-						<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="pageClick(this);">
-							<rect x="0" y="0" width="25" height="25"/>
-						</svg>
-						<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="pageClick(this);">
-							<rect x="0" y="0" width="25" height="25"/>
-						</svg>
-						<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="pageClick(this);">
-							<rect x="0" y="0" width="25" height="25"/>
-						</svg>
-						<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="pageClick(this);">
-							<rect x="0" y="0" width="25" height="25"/>
-						</svg>
-					</div>
-					<h1>komunikacja wizualna</h1>
+					<h1>komunikacja wizualna
+						<div class="pagination">
+							<svg class="paginationRect selectedRect" width="25" height="25" onclick="pageClick(this);" >
+								<rect x="0" y="0" width="25" height="25"/>
+							</svg>
+							<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="pageClick(this);">
+								<rect x="0" y="0" width="25" height="25"/>
+							</svg>
+							<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="pageClick(this);">
+								<rect x="0" y="0" width="25" height="25"/>
+							</svg>
+							<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="pageClick(this);">
+								<rect x="0" y="0" width="25" height="25"/>
+							</svg>
+							<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="pageClick(this);">
+								<rect x="0" y="0" width="25" height="25"/>
+							</svg>
+							<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="pageClick(this);">
+								<rect x="0" y="0" width="25" height="25"/>
+							</svg>
+						</div>
+					</h1>
 					<div class="descriptions">
 						<div>
 							<h2>logo Fundacji Sue Ryder</h2>
@@ -408,20 +413,30 @@
 		<div class="sliderContainer">
 			<div class="sliderInnerContainer">
 				<div id="fifthSlider" class="slider">
-                	<img src="pict/kultura/turniej0.jpg" >
-					<img src="pict/kultura/turniej1.jpg" >
-					<img src="pict/kultura/turniej2.jpg" >
-					<img src="pict/kultura/turniej3.jpg" >
-					<img src="pict/kultura/turniej4.jpg" >
-					<img src="pict/kultura/hiszp1.jpg" >
+                    <img src="pict/kultura/1CG.jpg" >
+                    <img src="pict/kultura/2CG.jpg" >
+                    <img src="pict/kultura/3CG.jpg" >
+                    <img src="pict/kultura/4CG.jpg" >
+                    <img src="pict/kultura/5CG.jpg" >
+                    <img src="pict/kultura/6CG.jpg" >
+                    <img src="pict/kultura/7CG.jpg" >
+                    <img src="pict/kultura/8CG.jpg" >
+                    <img src="pict/kultura/9CG.jpg" >
+                    <img src="pict/kultura/10CG.jpg" >
+                    <img src="pict/kultura/11CG.jpg" >
+					<img src="pict/kultura/turniej0.JPG" >
+					<img src="pict/kultura/turniej1.JPG" >
+					<img src="pict/kultura/turniej2.JPG" >
+					<img src="pict/kultura/turniej3.JPG" >
+					<img src="pict/kultura/turniej4.JPG" >
+					<img src="pict/kultura/hiszp1.JPG" >
                     <img src="pict/kultura/hiszp2.jpg" >
-                    <img src="pict/kultura/hiszp3.jpg" >
-                    <img src="pict/kultura/hiszp4.jpg" >
-                    <img src="pict/kultura/hiszp5.jpg" >
-                    <img src="pict/kultura/lata1.jpg" >
-                    <img src="pict/kultura/lata2.jpg" >
-                    <img src="pict/kultura/lata3.jpg" >
-                     <img src="pict/kultura/lata4.jpg" >
+                   	<img src="pict/kultura/hiszp3.JPG" >
+                   	<img src="pict/kultura/hiszp4.JPG" >
+                    <img src="pict/kultura/hiszp5.JPG" >
+                    <img src="pict/kultura/lata1.JPG" >
+					<img src="pict/kultura/lata3.JPG" >
+					<img src="pict/kultura/lata4.JPG" >
 					
 					<a href="#" class="slidesjs-previous slidesjs-navigation"></a>
 					<a href="#" class="slidesjs-next slidesjs-navigation"></a>
@@ -437,18 +452,22 @@
 					<polygon fill="#C41157" points="0,108 54.188,54.193 0,0.024 0,6.909 47.475,54.005 0,101.762 "/>
 				</svg>
 				<div id="fifthText" class="sliderText centralLayer">
-					<div class="pagination">
-						<svg class="paginationRect selectedRect" width="25" height="25" onclick="pageClick(this);" >
-							<rect x="0" y="0" width="25" height="25"/>
-						</svg>
-						<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
-							<rect x="0" y="0" width="25" height="25"/>
-						</svg>
-						<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
-							<rect x="0" y="0" width="25" height="25"/>
-						</svg>
-					</div>
-					<h1>kultura</h1>
+					<h1>kultura
+						<div class="pagination">
+							<svg class="paginationRect selectedRect" width="25" height="25" onclick="pageClick(this);" >
+								<rect x="0" y="0" width="25" height="25"/>
+							</svg>
+							<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
+								<rect x="0" y="0" width="25" height="25"/>
+							</svg>
+							<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
+								<rect x="0" y="0" width="25" height="25"/>
+							</svg>
+							<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
+								<rect x="0" y="0" width="25" height="25"/>
+							</svg>
+						</div>
+					</h1>
 					<div class="descriptions">
 						<div>
 							<h2>Turniej Jednego Wiersza</h2>
@@ -485,31 +504,11 @@
 	</div>
 
 	<div id="sixth" class="panel black">
-		<div class="sliderContainer">
+		<div class="sliderContainer tv">
 			<div class="sliderInnerContainer">
-				<div id="sixthSlider" class="slider">
-                	<img src="pict/warsztaty/0anima.jpg" >
-					<img src="pict/warsztaty/1anima.jpg" >
-					<img src="pict/warsztaty/2anima.jpg" >
-					<img src="pict/warsztaty/3anima.jpg" >
-					<img src="pict/warsztaty/turniej4.jpg" >
-					<img src="pict/warsztaty/1street.jpg" >
-                    <img src="pict/warsztaty/2street.jpg" >
-                    <img src="pict/warsztaty/3street.jpg" >
-                    <img src="pict/warsztaty/street4.jpg" >
-                    <img src="pict/warsztaty/street5.jpg" >
-                    <img src="pict/warsztaty/warsztatylazienki1.jpg" >
-                    <img src="pict/warsztaty/lazienki1a.jpg" >
-                    <img src="pict/warsztaty/lazienki 1c.jpg" >
-                     <img src="pict/warsztaty/lazienki1b.jpg" >
-                     <img src="pict/warsztaty/warsztatylazienki3.jpg" >
-                     <img src="pict/warsztaty/ksiazka1.jpg" >
-                     <img src="pict/warsztaty/ksiazka2.jpg" >
-                     <img src="pict/warsztaty/wakacje0.jpg" >
-                     <img src="pict/warsztaty/wakacje1.jpg" >
-                     <img src="pict/warsztaty/martwa1.jpg" >
-                     <img src="pict/warsztaty/martwa2.jpg" >
-                    
+				<div id="sixthSlider" class="slider sliderTV">
+					<iframe width="700" height="394" src="http://www.youtube.com/embed/JAM6yojkDa4" frameborder="0" allowfullscreen></iframe>
+					<iframe width="700" height="394" src="http://www.youtube.com/embed/XyP1yfpgO28" frameborder="0" allowfullscreen></iframe>
 					
 					<a href="#" class="slidesjs-previous slidesjs-navigation"></a>
 					<a href="#" class="slidesjs-next slidesjs-navigation"></a>
@@ -525,57 +524,26 @@
 					<polygon fill="#C41157" points="0,108 54.188,54.193 0,0.024 0,6.909 47.475,54.005 0,101.762 "/>
 				</svg>
 				<div id="sixthText" class="sliderText centralLayer">
-					<div class="pagination">
-						<svg class="paginationRect selectedRect" width="25" height="25" onclick="pageClick(this);" >
-							<rect x="0" y="0" width="25" height="25"/>
-						</svg>
-						<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="pageClick(this);">
-							<rect x="0" y="0" width="25" height="25"/>
-						</svg>
-						<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="pageClick(this);">
-							<rect x="0" y="0" width="25" height="25"/>
-						</svg>
-						<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="pageClick(this);">
-							<rect x="0" y="0" width="25" height="25"/>
-						</svg>
-						<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="pageClick(this);">
-							<rect x="0" y="0" width="25" height="25"/>
-						</svg>
-						<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="pageClick(this);">
-							<rect x="0" y="0" width="25" height="25"/>
-						</svg>
-					</div>
-					<h1>animacje</h1>
+					<h1>animacje
+						<div class="pagination">
+							<svg class="paginationRect selectedRect" width="25" height="25" onclick="pageClick(this);" >
+								<rect x="0" y="0" width="25" height="25"/>
+							</svg>
+							<svg class="paginationRect unselectedRectDark" width="25" height="25" onclick="pageClick(this);">
+								<rect x="0" y="0" width="25" height="25"/>
+							</svg>
+						</div>
+					</h1>
 					<div class="descriptions">
 						<div>
-							<h2>Serwis www Fundacji Sue Ryder</h2>
+							<h2>Animacja 1</h2>
 							Stworzenie nowej szaty graficznej serwisu i spójnej komunikacji wizualnej fundacji, wykonany na zlecenie agencji interaktywnj HINT.
 						</div>
 						<div class="hidden">
-							<h2>Strona wizerunkowa Glamsmile Polska</h2>
+							<h2>Animacja 2</h2>
 							Projekt graficzny strony www utrzymany w stylistyce międzynarodowej marki licówek Glamsmile, wykonany na zlecenie agencji interaktywnej HINT.
 						</div>
-						<div class="hidden">
-							<h2>Serwis PGNiG Termika</h2>
-							Projekt serwisu www elektrociepłowni PGNiG Termika, wykonany na zlecenie agencji interaktywnej HINT.
-						</div>
-						<div class="hidden">
-							<h2>Serwis Platformy n</h2>
-							Wybrane przykłady projektów przebudowy serwisu Platformy n, wykonanywane na zlecenie agencji interaktywnej HINT.
-						</div>
-						<div class="hidden">
-							<h2>Newslettery</h2>
-							Wybrane projekty interaktywnych newsletterów, wykonanywane na zlecenie agencji interaktywnej HINT.
-						</div>
-						<div class="hidden">
-							<h2>Strona firmowa Derma Profil</h2>
-							Projekt strony www firmy kosmetycznej, wykonany na zlecenie agencji interaktywnej HINT.
-						</div>
-						<div class="hidden">
-							<h2>Strona produktów marki Acnaid</h2>
-							Projekt strony www kosmetyków Acnaid stylizowany na "kolorowe czasopismo", wykonany na zlecenie agencji interaktywnej HINT. 
-						</div>
-					</div>					
+					</div>
 				</div>
             </div>
         </div>
@@ -621,27 +589,28 @@
 					<polygon fill="#C41157" points="0,108 54.188,54.193 0,0.024 0,6.909 47.475,54.005 0,101.762 "/>
 				</svg>
 				<div id="seventhText" class="sliderText centralLayer">
-					<div class="pagination">
-						<svg class="paginationRect selectedRect" width="25" height="25" onclick="pageClick(this);" >
-							<rect x="0" y="0" width="25" height="25"/>
-						</svg>
-						<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
-							<rect x="0" y="0" width="25" height="25"/>
-						</svg>
-						<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
-							<rect x="0" y="0" width="25" height="25"/>
-						</svg>
-						<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
-							<rect x="0" y="0" width="25" height="25"/>
-						</svg>
-						<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
-							<rect x="0" y="0" width="25" height="25"/>
-						</svg>
-						<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
-							<rect x="0" y="0" width="25" height="25"/>
-						</svg>
-					</div>
-					<h1>warsztaty kreatywne</h1>
+					<h1>warsztaty kreatywne
+						<div class="pagination">
+							<svg class="paginationRect selectedRect" width="25" height="25" onclick="pageClick(this);" >
+								<rect x="0" y="0" width="25" height="25"/>
+							</svg>
+							<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
+								<rect x="0" y="0" width="25" height="25"/>
+							</svg>
+							<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
+								<rect x="0" y="0" width="25" height="25"/>
+							</svg>
+							<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
+								<rect x="0" y="0" width="25" height="25"/>
+							</svg>
+							<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
+								<rect x="0" y="0" width="25" height="25"/>
+							</svg>
+							<svg class="paginationRect unselectedRectBright" width="25" height="25" onclick="pageClick(this);">
+								<rect x="0" y="0" width="25" height="25"/>
+							</svg>
+						</div>
+					</h1>
 					<div class="descriptions">
 						<div>
 							<h2>Serwis www Fundacji Sue Ryder</h2>
@@ -675,6 +644,12 @@
 				</div>
             </div>
         </div>
+	</div>
+	
+	<div id="footer">
+		<div id="footerCV" class="centralLayer">
+			zobacz<br>CV
+		</div>
 	</div>
 	
 	<!--<div class="shoe" data-stellar-background-ratio="0.5"></div>-->

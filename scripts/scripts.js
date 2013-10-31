@@ -3,8 +3,10 @@
 var CENTRAL_SQUARE_SHIFT = 104;
 var LAPTOP_SLIDER_WIDTH = 744;
 var LAPTOP_SLIDER_HEIGHT = 468;
+var TV_SLIDER_WIDTH = 700;
+var TV_SLIDER_HEIGHT = 394;
 
-var SLIDER_HEIGHT = 600;
+var SLIDER_HEIGHT = 450;
 var SLIDER_WIDTH = 900;
 
 // $(function(){
@@ -25,9 +27,7 @@ var rectTurnLeftHeight;
 var rectPictMarginTop;
 
 var tiles = {};
-// do testów te dwa obiekty
-var imgGray;
-var imgColor;
+
 
 $( document ).ready(function() {
 	// add slow scroll on link click
@@ -60,8 +60,8 @@ $( document ).ready(function() {
     });
 	
     $('#sixthSlider').slidesjs({
-        width: SLIDER_WIDTH,
-        height: SLIDER_HEIGHT
+        width: TV_SLIDER_WIDTH,
+        height: TV_SLIDER_HEIGHT
     });
 
     $('#seventhSlider').slidesjs({
@@ -74,18 +74,14 @@ $( document ).ready(function() {
 	rectTurnLeftHeight = $('.rectTurnLeft').css("height");
 	rectPictMarginTop = $('.rectPict').css("margin-top");
 	
-// 	var imgObj = document.getElementById('pict1');
-// 	var arr = grayscaleImage(imgObj);
-// 	imgObj.src = arr[0];
-// 	imgColor = arr[1];
-// 	imgGray = arr[0];
-// 	
+	
 // 	var arr = document.getElementsByClassName('rectPict');
 // 	for (i in arr) {
 // 		var p = arr[i];
 // 		var pics = grayscaleImage(p);
-// 		tiles[p.src] = pics[0];
-// 		tiles[p.src + '_Big'] = pics[1];
+// // 		var name = path(p.src);
+// 		tiles[p.id] = pics[0];
+// 		tiles[p.id + '_Big'] = pics[1];
 // 	}
 });
 
@@ -108,12 +104,10 @@ var rectTurnLeftTop;
 
 function zoomInRect(container) {
 	rect = $(container).children('img')[0];		// get child img object
+// 	rect.src = tiles[rect.id + "_Big"];
 	
 	rect.width = 380;
 	rect.height = 380;
-	
-// 	rect.src = imgColor;
-// 	$(rect).attr("src", "pict/rect1.png");
 	
 	$(rect).parent().parent().parent().css("width", "260px");
 	$(rect).parent().parent().parent().css("height", "260px");
@@ -130,12 +124,12 @@ function zoomInRect(container) {
 }
 
 function zoomOutRect(container) {
-	rect = $(container).children('img')[0];		// get child img object	
+	rect = $(container).children('img')[0];		// get child img object
+// 	rect.src = tiles[rect.id];
 	
 	rect.width = 230;
 	rect.height = 230;
 	
-// 	rect.src = imgGray;
 
 	$(rect).parent().parent().parent().css("width", rectTurnLeftWidth);
 	$(rect).parent().parent().parent().css("height", rectTurnLeftHeight);

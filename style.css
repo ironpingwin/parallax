@@ -13,6 +13,7 @@ h1 {
 }
 
 h2 {
+	color: #c21b60;
 	font-size: 16pt;
 	font-weight: normal;
 }
@@ -111,10 +112,14 @@ h2 {
 }
 
 #menu a {
-	color: #AFCD17;
+	color: #d7f91d;
 	text-decoration: none;
-	margin-right: 30px;
-	font-size: x-small;
+	margin-right: 25px;
+	font-size: 10pt;
+}
+
+#menu .last {
+	margin-right: 0px;
 }
 
 #centerButtons {
@@ -131,6 +136,22 @@ h2 {
 .panel {
 	padding-top:60px;
 	padding-bottom:40px;
+}
+
+#footer {
+	background-image: url(pict/stopka.png);
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	height:330px;
+	color: #4051A3;
+	width:100%;
+}
+
+#footerCV {
+	width: 140px;
+	top: 200px;
+	position: relative;
+	text-align: center;
 }
 
 #laptop {
@@ -158,7 +179,7 @@ h2 {
 }
 
 .sliderArrows {
-	top: 200px;
+	top: 170px;
 }
 
 .sliderLeft {
@@ -216,6 +237,7 @@ h2 {
 
 .pagination {
 	text-align: right;
+	float: right;
 }
 
 .paginationRect {
@@ -228,6 +250,11 @@ h2 {
 	width: 100%;
 	max-width: 900px;
 	margin: 0px auto;
+}
+
+.sliderTV {
+	max-width:700px;
+	margin-bottom: 100px;
 }
 
 .sliderContainer {
@@ -255,8 +282,16 @@ h2 {
 	background-color: white;
 }
 
+.tv {
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	background-image: url(pict/telewizorWWW.png);
+	padding-top: 25px;
+}
+
 #seventh {
 	background-color: black;
+	padding-bottom: 200px;
 }
 
 .grayscale {
