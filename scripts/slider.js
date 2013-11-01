@@ -134,7 +134,7 @@ var laptopPictPerPage = {
 var thirdPictPerPage = {
 	0: 1,
 	1: 1,
-	2: 7,
+	2: 6,
 	3: 2,
 	4: 1
 	
