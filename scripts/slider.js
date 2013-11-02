@@ -169,7 +169,7 @@ var seventhPictPerPage = {
 	2: 6,
 	3: 2,
 	4: 3
-	
+
 };
 
 /* slider instances */
