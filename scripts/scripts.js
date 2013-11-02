@@ -109,6 +109,8 @@ function zoomInRect(container) {
 	rect.width = 380;
 	rect.height = 380;
 	
+	$(rect).removeClass("grayscale");
+	
 	$(rect).parent().parent().parent().css("width", "260px");
 	$(rect).parent().parent().parent().css("height", "260px");
 
@@ -130,6 +132,7 @@ function zoomOutRect(container) {
 	rect.width = 230;
 	rect.height = 230;
 	
+	$(rect).addClass("grayscale");
 
 	$(rect).parent().parent().parent().css("width", rectTurnLeftWidth);
 	$(rect).parent().parent().parent().css("height", rectTurnLeftHeight);

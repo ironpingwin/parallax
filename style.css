@@ -144,7 +144,8 @@ h2 {
 	background-repeat: no-repeat;
 	height:330px;
 	color: #4051A3;
-	width:100%;
+	width: 100%;
+	margin-bottom: 100px;
 }
 
 #footerCV {
@@ -295,11 +296,9 @@ h2 {
 }
 
 .grayscale {
-/*	-webkit-filter: grayscale(100%);
-	-moz-filter: grayscale(100%);
-	-o-filter: grayscale(100%);
-	-ms-filter: grayscale(100%);
-	filter: grayscale(100%);*/
+	-webkit-filter: grayscale(1); -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%);
+	filter: gray; filter: grayscale(100%);
+	filter: url(pict/filters.svg#grayscale);	
 }
 
 .rectTurnLeft {
