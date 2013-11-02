@@ -73,16 +73,6 @@ $( document ).ready(function() {
 	rectTurnLeftWidth = $('.rectTurnLeft').css("width"); 
 	rectTurnLeftHeight = $('.rectTurnLeft').css("height");
 	rectPictMarginTop = $('.rectPict').css("margin-top");
-	
-	
-// 	var arr = document.getElementsByClassName('rectPict');
-// 	for (i in arr) {
-// 		var p = arr[i];
-// 		var pics = grayscaleImage(p);
-// // 		var name = path(p.src);
-// 		tiles[p.id] = pics[0];
-// 		tiles[p.id + '_Big'] = pics[1];
-// 	}
 });
 
 // $( window ).resize(function() {
@@ -104,7 +94,6 @@ var rectTurnLeftTop;
 
 function zoomInRect(container) {
 	rect = $(container).children('img')[0];		// get child img object
-// 	rect.src = tiles[rect.id + "_Big"];
 	
 	rect.width = 380;
 	rect.height = 380;
@@ -127,7 +116,6 @@ function zoomInRect(container) {
 
 function zoomOutRect(container) {
 	rect = $(container).children('img')[0];		// get child img object
-// 	rect.src = tiles[rect.id];
 	
 	rect.width = 230;
 	rect.height = 230;
@@ -149,46 +137,4 @@ function zoomOutRect(container) {
 
 
 
-
-
-
-
-// TODO 
-// Trzeba sprawdzić z nowym google-chromem bo w starej wersji jest błąd przy pobieraniu obiektu Image ze strony
-function grayscaleImage(imgObj)
-{
-	var canvas = document.createElement('canvas');
-	var canvasContext = canvas.getContext('2d');
-	
-	var canvasBig = document.createElement('canvas');
-	var canvasContextBig = canvasBig.getContext('2d');
-	
-	var imgW = 460;// imgObj.width;
-	var imgH = 460;// imgObj.height;
-	canvas.width = imgW;
-	canvas.height = imgH;
-	
-	canvasBig.width = imgW;
-	canvasBig.height = imgH;
-	canvasContextBig.drawImage(imgObj, 0, 0);
-	
-	canvasContext.drawImage(imgObj, 0, 0);
-	var imgPixels = canvasContext.getImageData(0, 0, imgW, imgH);
-	
-	for(var y = 0; y < imgPixels.height; y++){
-		for(var x = 0; x < imgPixels.width; x++){
-			var i = (y * 4) * imgPixels.width + x * 4;
-			var avg = (imgPixels.data[i] + imgPixels.data[i + 1] + imgPixels.data[i + 2]) / 3;
-			imgPixels.data[i] = avg; 
-			imgPixels.data[i + 1] = avg; 
-			imgPixels.data[i + 2] = avg;
-		}
-	}
-	
-	canvasContext.putImageData(imgPixels, 0, 0, 0, 0, imgPixels.width, imgPixels.height);
-	
-// 		imgObj.src = canvas.toDataURL();
-//         return canvas.toDataURL();
-	return [canvas.toDataURL(), canvasBig.toDataURL()];
-}  
 
