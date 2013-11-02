@@ -8,15 +8,15 @@ body {
 h1 {
  	font-family: 'Play', sans-serif; 
 	font-weight: normal;
-	font-size: 28pt;
+	font-size: 30pt;
 	margin: 0px;
 }
 
 h2 {
 	color: #c21b60;
-	font-size: 16pt;
+	font-size: 18pt;
 	font-weight: normal;
-	margin-bottom: 8px;
+	margin-bottom: 3px;
 }
 
 a {
