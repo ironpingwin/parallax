@@ -16,6 +16,11 @@ h2 {
 	color: #c21b60;
 	font-size: 16pt;
 	font-weight: normal;
+	margin-bottom: 10px;
+}
+
+a {
+	text-decoration: none;
 }
 
 .centralLayer {
@@ -281,6 +286,10 @@ h2 {
 
 #sixth {
 	background-color: white;
+}
+
+.tvDescription {
+	margin-top: 130px;
 }
 
 .tv {

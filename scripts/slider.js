@@ -158,7 +158,8 @@ var fifthPictPerPage = {
 
 var sixthPictPerPage = {
 	0: 1,
-	1: 1
+	1: 1,
+	2: 1
 };
 
 var seventhPictPerPage = {
