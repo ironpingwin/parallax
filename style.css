@@ -75,7 +75,7 @@ a {
 
 .first {
 	background-image: url(pict/background_1.png);
-	height: 1944px;
+	height: 1800px;
 }
 
 
@@ -155,9 +155,12 @@ a {
 
 #footerCV {
 	width: 140px;
-	top: 200px;
+	height: 100px;
+	top: 150px;
 	position: relative;
 	text-align: center;
+	padding-top: 50px;
+	display: block;
 }
 
 #laptop {
