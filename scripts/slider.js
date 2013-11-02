@@ -166,7 +166,7 @@ var sixthPictPerPage = {
 var seventhPictPerPage = {
 	0: 4,
 	1: 5,
-	2: 5,
+	2: 6,
 	3: 2,
 	4: 3
 	
