@@ -48,6 +48,16 @@ a {
 	display: none;
 }
 
+.downloadPDF {
+	margin-top: 10px;
+	display: block;
+}
+
+.downloadPDF a {
+	color: white;
+}
+
+
 #firstText {
 	position: relative;
 	top: 80px;
