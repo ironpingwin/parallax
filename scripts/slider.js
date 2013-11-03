@@ -143,17 +143,16 @@ var thirdPictPerPage = {
 var fourthPictPerPage = {
 	0: 1,
 	1: 1,
-	2: 1,
-	3: 2,
-	4: 1,
-	5: 1
+	2: 2,
+	3: 1,
+	4: 1
 };
 
 var fifthPictPerPage = {
 	0: 5,
 	1: 12,
 	2: 5,
-	3: 4,
+	3: 5,
 	4: 5
 	};
 
@@ -166,10 +165,10 @@ var sixthPictPerPage = {
 var seventhPictPerPage = {
 	0: 4,
 	1: 5,
-	2: 5,
+	2: 6,
 	3: 2,
 	4: 3
-	
+
 };
 
 /* slider instances */
